@@ -45,6 +45,10 @@ public class Program
             Console.WriteLine(exp.Message);
             Console.WriteLine("Desculpe, algo deu errado!!!");
         }
+        finally
+        {
+            Console.WriteLine("Programa finalizado");
+        }
     }
     private static void Register(string text)
     {
