@@ -14,6 +14,12 @@ public class Program
                 Console.WriteLine(arr[index]);
             }
         }
+        catch(IndexOutOfRangeException exp)
+        {
+            Console.WriteLine(exp.InnerException);
+            Console.WriteLine(exp.Message);
+            Console.WriteLine("Índice não encontrado!");
+        }
         catch (Exception exp)
         {
             Console.Clear();
